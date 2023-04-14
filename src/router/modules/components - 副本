@@ -1,0 +1,35 @@
+import { $t } from "@/plugins/i18n";
+import { components } from "@/router/enums";
+
+export default {
+  path: "/components",
+  redirect: "/components/video",
+  meta: {
+    icon: "menu",
+    title: $t("menus.hscomponents"),
+    rank: components
+  },
+  children: [
+    // {
+    //   path: "/components/message",
+    //   name: "Message",
+    //   component: () => import("@/views/components/message/index.vue"),
+    //   meta: {
+    //     title: $t("menus.hsmessage"),
+    //     extraIcon: "IF-pure-iconfont-new svg",
+    //     transition: {
+    //       enterTransition: "animate__fadeInLeft",
+    //       leaveTransition: "animate__fadeOutRight"
+    //     }
+    //   }
+    // },
+    {
+      path: "/components/video",
+      name: "Video",
+      component: () => import("@/views/components/video/index.vue"),
+      meta: {
+        title: $t("menus.hsvideo")
+      }
+    }
+  ]
+} as RouteConfigsTable;
