@@ -38,5 +38,6 @@
   "iconify.excludes": [
     "el"
   ],
-  "python.formatting.provider": "yapf"
+  "python.formatting.provider": "autopep8",
+  "python.analysis.typeCheckingMode": "basic"
 }

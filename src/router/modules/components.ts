@@ -1,7 +1,7 @@
 import { $t } from "@/plugins/i18n";
 import { components } from "@/router/enums";
 const IFrame = () => import("@/layout/frameView.vue");
-
+// 实时监控
 export default {
   path: "/components",
   redirect: "/components/video",

@@ -48,7 +48,7 @@ setOptions(
     legend: {
       //@ts-expect-error
       right: true,
-      data: ["报警数", "温度变化"]
+      data: ["报警数", "温度"]
     },
     calculable: true,
     xAxis: [
@@ -107,10 +107,10 @@ setOptions(
             }
           ]
         },
-        data: tempData
+        data: alertData
       },
       {
-        name: "温度变化",
+        name: "温度",
         type: "line",
         symbolSize: 10,
         symbol: "circle",
@@ -130,7 +130,7 @@ setOptions(
             }
           ]
         },
-        data: alertData
+        data: tempData
       }
     ],
     addTooltip: true

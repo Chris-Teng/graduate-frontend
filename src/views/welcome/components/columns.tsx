@@ -2,7 +2,7 @@ import { ref } from "vue";
 import axios from "axios";
 
 const statusData = ref();
-axios.get("http://192.168.146.8:8000/welcome/Status").then(res => {
+axios.get("http://127.0.0.1:8001/welcome/Status").then(res => {
   statusData.value = res.data;
 });
 

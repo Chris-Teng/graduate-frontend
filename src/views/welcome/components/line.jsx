@@ -3,11 +3,11 @@ import axios from "axios";
 
 // 获取温度和报警数信息，用于图表显示
 const tempData = ref();
-axios.get("http://192.168.146.8:8000/welcome/tempdata").then(res => {
+axios.get("http://127.0.0.1:8001/welcome/tempdata").then(res => {
   tempData.value = res.data;
 });
 const alertData = ref();
-axios.get("http://192.168.146.8:8000/welcome/alertdata").then(res => {
+axios.get("http://127.0.0.1:8001/welcome/alertdata").then(res => {
   alertData.value = res.data;
 });
 
